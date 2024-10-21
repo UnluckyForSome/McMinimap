@@ -4,7 +4,12 @@ McMinimap is an updated continuation of Marfullsen's excellent [AOE2 Minimap Gen
 
 ![Minimap example 1](example1.png)
 
+# Improved Features
 
+ - Elevation
+ - Adjustable sizes
+ - 360 orientations
+ - 
 
 ![Minimap example 1](example2.png)
 
