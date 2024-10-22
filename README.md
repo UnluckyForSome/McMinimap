@@ -18,6 +18,15 @@ McMinimap is an updated continuation of Marfullsen's excellent [AOE2 Minimap Gen
 
 ![Minimap example 1](example2.png)
 
+# Usage
+
+Script can either set be run in "Module Mode" which allows the script to be called upon from elsewhere - e.g:
+
+```python
+from McMinimap import generate_minimap
+minimap = generate_minimap(aoe2recording)
+```
+
 # Thanks
 
 Thankyou to **Marfullsen**'s excellent [AOE2 Minimap Generator](https://github.com/Marfullsen/AoE2-minimap-generator), on which this script was based on. In the end much got rewritten, but it certainly served as the inspiration and a great starting point.
