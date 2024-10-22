@@ -474,8 +474,8 @@ def generate_minimap(input_file):
     # Paste the border canvas over the top of the canvas
     canvas.paste(border_canvas, border_canvas)
 
-    canvas = canvas.resize((1630, 815), resample=Image.Resampling.LANCZOS)  # Adjust the size here
-    #canvas = canvas.resize((2242, 1121), resample=Image.Resampling.LANCZOS)  # Adjust the size here
+    #canvas = canvas.resize((1630, 815), resample=Image.Resampling.LANCZOS)  # Manual size adjust
+    #canvas = canvas.resize((2242, 1121), resample=Image.Resampling.LANCZOS)  # # Manual size adjust
 
 
 
