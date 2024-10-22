@@ -14,7 +14,7 @@ McMinimap generates static Age of Empires 2 mini-maps using recorded game data, 
  - Adjustable orthographic ratio (map tilt)
  - Elevation
  - Adjustable borders
- - Module mode - call the script as an addititonal module from elsewhere
+ - Module mode - call the script as an additional module from elsewhere
 
 ![Minimap example 1](examples/example2.png)
 
@@ -22,9 +22,10 @@ McMinimap generates static Age of Empires 2 mini-maps using recorded game data, 
 
  - Download the entire structure. 
  - Update the settings section in McMinimap.py to point towards your recording file (currently there is a sample recording file set up).
+ - Install the dependencies
  - Hit run and check the output folder.
 
-Alternatively, the script can be run in "Module Mode" which allows it to be called  from elsewhere - e.g:
+Alternatively, the script can be run in "Module Mode" which allows it to be called from elsewhere - e.g:
 
 ```python
 from McMinimap import generate_minimap
