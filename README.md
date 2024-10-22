@@ -34,6 +34,8 @@ minimap = generate_minimap(aoe2recording)
 
 Just set ```module_mode``` to ```True``` in ```McMinimap.py```
 
+![Minimap example 1](examples/example3.png)
+
 # Thanks
 
 Thankyou to **Marfullsen**'s excellent [AOE2 Minimap Generator](https://github.com/Marfullsen/AoE2-minimap-generator), on which this script was based on. In the end much got rewritten, but it certainly served as the inspiration and a great starting point.
