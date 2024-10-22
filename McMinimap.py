@@ -17,7 +17,7 @@ cliff_objects = McMinimapData.cliff_objects
 
 # Settings (you need to update these)
 module_mode = False                                                                                                                      # Module mode allows you to call on this script from elsewhere and return a map. Leave this False otherwise.
-manual_replay_file_path =  os.path.join(os.path.dirname(__file__), "MP Replay v101.102.52940.0 @2024.08.01 233627 (3).aoe2record")       # The AOE2 replay file to use if module_mode is False.
+manual_replay_file_path =  os.path.join(os.path.dirname(__file__), "/examples/MP Replay Example.aoe2record")       # The AOE2 replay file to use if module_mode is False.
 manual_canvas_save_file_path =  os.path.join(os.path.dirname(__file__))                                                                  # Manual base path for saving the canvas
 object_mode = "square"                                                                                                                   # Options are "rotated" and "square". Determines if objects are drawn before or after canvas rotation.
 player_tc_marker = "emblem"                                                                                                              # Options are "pixel" and "emblem".
