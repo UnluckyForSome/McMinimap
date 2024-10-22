@@ -1,6 +1,6 @@
 # McMinimap
  
-McMinimap generates static Age of Empires 2 mini-maps using recorded game data, which I use to autopopulate my ![YouTube Channel](https://www.youtube.com/@buttonbashofficial) intros!
+McMinimap generates static Age of Empires 2 mini-maps using recorded game data, which I use to autopopulate my [YouTube Channel](https://www.youtube.com/@buttonbashofficial) intros!
 
 ![Minimap example 1](example1.png)
 
