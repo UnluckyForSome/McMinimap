@@ -41,3 +41,5 @@ Just set ```module_mode``` to ```True``` in ```McMinimap.py```
 Thankyou to **Marfullsen**'s excellent [AOE2 Minimap Generator](https://github.com/Marfullsen/AoE2-minimap-generator), on which this script was based on. In the end much got rewritten, but it certainly served as the inspiration and a great starting point.
 
 Of course thanks to **happyleaves**'s [aoc-mgz](https://github.com/happyleavesaoc/aoc-mgz), which is key in parsing AOE2's recorded games.
+
+![Minimap example 1](examples/example4.png)
