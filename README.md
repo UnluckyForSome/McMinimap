@@ -22,7 +22,7 @@ McMinimap generates static Age of Empires 2 mini-maps using recorded game data, 
 
  - Download the entire structure. 
  - Update the settings section in McMinimap.py to point towards your recording file (currently there is a sample recording file set up).
- - Hit run and check the output, which is currently set to the same directory as the script.
+ - Hit run and check the output folder.
 
 Alternatively, the script can be run in "Module Mode" which allows it to be called  from elsewhere - e.g:
 
