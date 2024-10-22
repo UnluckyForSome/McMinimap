@@ -16,21 +16,21 @@ relic_objects = McMinimapData.relic_objects
 cliff_objects = McMinimapData.cliff_objects
 
 # Settings (you need to update these)
-module_mode = False                                                                                                         # Module mode allows you to call on this script from elsewhere and return a map. Leave this False otherwise.
-manual_replay_file_path =  os.path.join(os.path.dirname(__file__), "MP Replay v101.102.52940.0 @2024.08.01 233627 (3).aoe2record")      # The AOE2 replay file to use if module_mode is False.
-manual_canvas_save_file_path =  os.path.join(os.path.dirname(__file__))                                                         # Manual base path for saving the canvas
-object_mode = "square"                                                                                                      # Options are "rotated" and "square". Determines if objects are drawn before or after canvas rotation.
-player_tc_marker = "emblem"                                                                                                 # Options are "pixel" and "emblem".
-angle = 45                                                                                                                  # Angle the map is drawn at. AOE2's default style is 45.
-multiplier_integer = 9                                                                                                      # UnluckyForSome... Multiplier for the size of the minimap. Higher = more pixels per map. Even numbers mean tiles can never be explicit.
-orthographic_ratio = 2                                                                                                      # When veiwed at a 45 degree angle, this is the "tilt" of the map. AOE2's style is 2.
-border_spacing = 4                                                                                                          # Spacing around the map. Fill it with an optional border
+module_mode = False                                                                                                                      # Module mode allows you to call on this script from elsewhere and return a map. Leave this False otherwise.
+manual_replay_file_path =  os.path.join(os.path.dirname(__file__), "MP Replay v101.102.52940.0 @2024.08.01 233627 (3).aoe2record")       # The AOE2 replay file to use if module_mode is False.
+manual_canvas_save_file_path =  os.path.join(os.path.dirname(__file__))                                                                  # Manual base path for saving the canvas
+object_mode = "square"                                                                                                                   # Options are "rotated" and "square". Determines if objects are drawn before or after canvas rotation.
+player_tc_marker = "emblem"                                                                                                              # Options are "pixel" and "emblem".
+angle = 45                                                                                                                               # Angle the map is drawn at. AOE2's default style is 45.
+multiplier_integer = 9                                                                                                                   # UnluckyForSome... Multiplier for the size of the minimap. Higher = more pixels per map. Even numbers mean tiles can never be explicit.
+orthographic_ratio = 2                                                                                                                   # When veiwed at a 45 degree angle, this is the "tilt" of the map. AOE2's style is 2.
+border_spacing = 4                                                                                                                       # Spacing around the map. Fill it with an optional border
 
-draw_cliffs = True                                                                                                          # Draw cliffs
-draw_walls = True                                                                                                           # Draw walls
+draw_cliffs = True                                                                                                                       # Draw cliffs
+draw_walls = True                                                                                                                        # Draw walls
 
-draw_player_objects = False                                                                                                 # Draw player objects
-draw_gaia_objects = True                                                                                                    # Draw gaia objects
+draw_player_objects = False                                                                                                              # Draw player objects
+draw_gaia_objects = True                                                                                                                 # Draw gaia objects
 
 
 # Global variables for extra pixel layer around coords. Setting these to the same as the multiplier_integer will effectively double the size
@@ -397,7 +397,7 @@ def create_transparency_mask(canvas):
 
 
     
-def write_combined_minimap(input_file):
+def generate_minimap(input_file):
     print(f'Input file: {input_file}')
     summary = get_mgz(input_file)
     map = summary.match.map
@@ -507,7 +507,7 @@ def create_civ_icon_canvas(players, original_map_dimension):
         coords = rotate_coordinates(position.x, position.y, original_map_dimension, civ_emblem_canvas.height, performed_after_enlargement=True)
 
         # Load the civ.png image
-        civ_image = Image.open("Z:/YouTube/Scripts/CivEmblems/" + player.civilization + ".png")
+        civ_image = Image.open(os.path.join(os.path.dirname(__file__)) + "/emblems/" + player.civilization + ".png")
 
         
 
@@ -544,4 +544,4 @@ def create_civ_icon_canvas(players, original_map_dimension):
 
 
 if module_mode is False:
-    write_combined_minimap(manual_replay_file_path)
+    generate_minimap(manual_replay_file_path)
