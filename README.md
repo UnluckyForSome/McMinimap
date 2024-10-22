@@ -1,6 +1,6 @@
 # McMinimap
  
-McMinimap is an updated continuation of Marfullsen's excellent [AOE2 Minimap Generator](https://github.com/Marfullsen/AoE2-minimap-generator), which utilises [aoc-mgz](https://github.com/happyleavesaoc/aoc-mgz) to generate static Age of Empires 2 mini-maps using recorded game data.
+McMinimap generatea static Age of Empires 2 mini-maps using recorded game data, which I use to autopopulate my ![YouTube Channel](https://www.youtube.com/@buttonbashofficial) intros!
 
 ![Minimap example 1](example1.png)
 
@@ -21,8 +21,8 @@ McMinimap is an updated continuation of Marfullsen's excellent [AOE2 Minimap Gen
 # Usage
 
  - Download the entire structure. 
- - Update the settings section in McMinimap.py to point towards your recording file (currently there is a sample recording file set up)
- - Hit run and check the output!
+ - Update the settings section in McMinimap.py to point towards your recording file (currently there is a sample recording file set up).
+ - Hit run and check the output, which is currently set to the same directory as the script.
 
 Alternatively, the script can be run in "Module Mode" which allows it to be called  from elsewhere - e.g:
 
