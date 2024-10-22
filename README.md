@@ -20,12 +20,18 @@ McMinimap is an updated continuation of Marfullsen's excellent [AOE2 Minimap Gen
 
 # Usage
 
-Script can either set be run in "Module Mode" which allows the script to be called upon from elsewhere - e.g:
+ - Download the entire structure. 
+ - Update the settings section in McMinimap.py to point towards your recording file (currently there is a sample recording file set up)
+ - Hit run and check the output!
+
+Alternatively, the script can be run in "Module Mode" which allows it to be called  from elsewhere - e.g:
 
 ```python
 from McMinimap import generate_minimap
 minimap = generate_minimap(aoe2recording)
 ```
+
+Just set ```module_mode``` to ```True``` in ```McMinimap.py```
 
 # Thanks
 
