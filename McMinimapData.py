@@ -123,7 +123,16 @@ tiles_colors = {
     109: {'normal': '#e8b478', 'shady': '#bd966f', 'sunny': '#f8c98a', 'description': 'Beach, Wet Rock'},
     110: {'normal': '#157615', 'shady': '#007200', 'sunny': '#257439', 'description': 'Forest, Birch'},
     111: {'normal': '#5492b0', 'shady': '#5492b0', 'sunny': '#5492b0', 'description': 'Swamp, Shallows'},
-    112: {'normal': '#157615', 'shady': '#007200', 'sunny': '#257439', 'description': 'Forest, Palm Grass'}
+    112: {'normal': '#157615', 'shady': '#007200', 'sunny': '#257439', 'description': 'Forest, Palm Grass'},
+    113: {'normal': '#157615', 'shady': '#007200', 'sunny': '#257439', 'description': 'Forest, Lush Bamboo'},
+    114: {'normal': '#305db6', 'shady': '#305db6', 'sunny': '#305db6', 'description': 'Water, Yellow (Shallow)'},
+    115: {'normal': '#5492b0', 'shady': '#5492b0', 'sunny': '#5492b0', 'description': 'Shallows, Yellow'},
+    116: {'normal': '#004aa1', 'shady': '#004aa1', 'sunny': '#004aa1', 'description': 'Water, Yellow (Deep)'},
+    117: {'normal': '#82884d', 'shady': '#768241', 'sunny': '#8a8b57', 'description': 'Pasture'},
+    118: {'normal': '#82884d', 'shady': '#768241', 'sunny': '#8a8b57', 'description': 'Pasture, Dead'},
+    119: {'normal': '#82884d', 'shady': '#768241', 'sunny': '#8a8b57', 'description': 'Pasture, 0%'},
+    120: {'normal': '#82884d', 'shady': '#768241', 'sunny': '#8a8b57', 'description': 'Pasture, 33%'},
+    121: {'normal': '#82884d', 'shady': '#768241', 'sunny': '#8a8b57', 'description': 'Pasture, 66%'}
 }
 wall_objects = {
     63: 'Fortified Gate (up.)',
